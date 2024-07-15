@@ -1,0 +1,50 @@
+.IconsContainer{
+    padding-top:2em;
+    padding-bottom:2em;
+    display:flex;
+    justify-content: center;
+    background-color: var(--color-background-ItemIcon);
+    margin-top: 3em;
+
+    .container{
+      display:flex;
+      background-color: var(--color-background-ItemIcon);
+      color:var(--color-text-icon);
+      padding:1.5em 1.5em;
+      gap:2em;
+      align-items: center;
+    }
+
+    .description{
+      p:nth-child(1){
+        color:var(--color-text-icon);
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 0.1em;
+      }
+      p:nth-child(2){
+        color:var(--color-text-icon);
+        font-size: 13px;
+        opacity: 0.7;
+    }
+    }
+
+    #IconsP1,#IconsP2{display:flex;}
+
+
+    .icon{
+      font-size: 50px;
+  }
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 850px) {
+  .container,#IconsP1,#IconsP2{
+    flex-direction: column;
+  }
+  #divider{
+    display:none;
+  }
+}
+
+
+}

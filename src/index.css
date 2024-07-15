@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+
+:root{
+  --color-background-color: rgb(30,32,34);
+
+  --color-background-color-header:rgb(42,50,67);
+  --color-icons-header:aliceblue;
+  --color-icons-header2:darkblue;
+  --color-background-color-header2:blue;
+
+  --color-Menu:white;
+
+  --color-dark: #2f2f2f;
+  --color-light: rgb(243,245,249);
+  --color-light1: rgba(222, 224, 225, 0.01);
+  --color-brand: rgba(13, 5, 76, 0.254);
+  --font-fam: 'Lato', sans-serif;
+
+  --color-background-ItemIcon:rgb(51, 54, 60);
+  --color-text-icon: white;
+
+  --color-bg-header:black;
+
+  --color-text-annonce:white;
+
+  --color-bg-button-category:rgba(212, 214, 237, 0.798);
+  --color-category-text:white;
+
+
+}
+
+.light{
+  --color-background-color: rgba(245, 245, 246, 0.742);
+
+  --color-background-color-header:rgb(42,50,67);
+  --color-icons-header:#fff;
+
+  --color-background-color-header2:white;
+  --color-icons-header2:darkblue;
+
+  --color-Menu:rgb(55, 63, 80);
+
+  --color-background-ItemIcon:white;
+  --color-text-icon: #000;
+ 
+  --color-light1: rgba(17, 136, 205, 0);
+  --color-light: rgba(144, 187, 212, 0.216);
+  --color-bg-header:white;
+
+  --color-text-annonce:black;
+
+  --color-bg-button-category:rgba(212, 214, 237, 0.798);
+  --color-category-text:blue;
+
+  
+}
+
+
+.AppContainer{
+  background-color: var(--color-background-color);
+  height: 100vh;
+}
+
+
+.border{
+  border: 1px solid red;
+}
+
+.StyleBold{
+  font-weight: bold;
+}

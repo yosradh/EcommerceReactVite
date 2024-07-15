@@ -1,0 +1,7 @@
+{
+  "name": "e-commercefront",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}

@@ -1,0 +1,25 @@
+.FooterPage{
+    background: var(--color-background-color);    
+    padding-top:1em;;
+}
+
+.footer{
+    text-align: center;
+    padding: 18px;
+    background-color: var(--color-background-color-header);
+    color:aliceblue;
+    font-size: 19px;
+    margin-top: 20px;
+}
+
+.footer a{
+    color:rgb(106, 153, 194);
+    font-size: large; 
+    font-weight: bold;
+}
+
+.flesheC{
+    font-size: 45px;
+    position: absolute;
+    right: 10px;
+}

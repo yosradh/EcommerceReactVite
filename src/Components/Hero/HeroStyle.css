@@ -1,0 +1,163 @@
+.HeroContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 14em;
+    padding-right: 4em;
+    padding-top: 4em;
+    gap:10px;
+    width:100%;
+    background:var(--color-background-color);    
+}
+
+.LeftSection {
+    width:70%;
+    height:30.7em;
+
+    .TexteBanner1 {
+        position: absolute;
+        z-index: 1;
+        top: 3em;
+        left:10%;
+        font-weight: 400;
+        font-size: 30px;
+        text-align: left;
+        width: fit-content;
+    }
+
+    .ButtonShop {
+        cursor: pointer;
+        position: relative;
+        padding: 15px;
+        background-color: gray;
+        border: none;
+        color: white;
+        font-size: 18px;
+
+    }
+    .swiper {
+        width:100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        height: 100%;
+        width:100%;
+    }
+
+
+}
+
+
+.RightSection {
+    width: 30%;
+    height:30.7em;
+
+    .TexteBanner1 {
+        position: relative;
+        left: 10%;
+        top: -12em;
+        font-weight: 300;
+        font-size: 18px;
+        width:fit-content;
+    }
+
+    .BtnShop {
+        cursor: pointer;
+        position: relative;
+        color: blue;
+    }
+
+    .Banner{
+        margin-top: -5.5em;
+    }
+}
+
+@media (min-width:800px) and (max-width:1400px) {
+    .HeroContainer {
+        padding-left: 10px;
+        padding-top: 4em;
+    }
+    .RightSection{
+        position: relative;
+        left:-5em;
+    }
+    .LeftSection {
+        width:60%;
+
+        .TexteBanner1 {
+            left:10%;
+            padding-left: 5px;
+        }
+    }
+}
+
+
+@media (max-width:900px) {
+    .HeroContainer {
+        display: block;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 4em;
+
+    }
+
+    .LeftSection {
+        width:100%;
+
+        .TexteBanner1 {
+            left: 10%;
+        }
+    }
+
+    .RightSection {
+        position: relative;
+        align-items: center;
+        padding-left: 20%;
+        display: flex;
+        gap:1em;
+        width:100%;
+
+        .TexteBanner1 {
+            width:fit-content;
+        }
+            
+        .Banner{
+            margin-top: 0;
+        }
+    }
+
+}
+
+@media (max-width:800px) {
+    .RightSection {
+        display: block;
+        padding-left: 18%;
+        top:1em;
+             
+        .Banner{
+            margin-top: -5em;
+        }
+    }
+
+    .LeftSection {
+        .TexteBanner1 {
+            left: 10%;
+            }    
+        }
+
+    .HeroContainer{
+        padding-bottom: 3em;
+    }
+
+}
