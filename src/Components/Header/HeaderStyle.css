@@ -1,4 +1,4 @@
-/* beging  style of header1 */
+/* Begin style of header1 */
 .HeaderContainer1 {
     background-color: var(--color-background-color-header);
     width: 100%;
@@ -7,14 +7,14 @@
     border-bottom-left-radius: 7px;
 }
 
-.titreHeader {
+.HeaderContainer1 .titreHeader {
     color: var(--color-icons-header);
     position: relative;
     top: 10px;
     margin-left: 20px;
 }
 
-.icons {
+.HeaderContainer1 .icons {
     display: flex;
     float: right;
     margin-right: 3em;
@@ -24,12 +24,12 @@
     cursor: pointer;
 }
 
-.icone {
+.HeaderContainer1 .icone {
     font-size: 20px;
     color: var(--color-icons-header);
 }
 
-.LangueOption {
+.HeaderContainer1 .LangueOption {
     background-color: var(--color-background-color-header);
     border: none;
     font-size: 15px;
@@ -37,92 +37,84 @@
     color: var(--color-icons-header);
 }
 
-.LangueOption:active {
+.HeaderContainer1 .LangueOption:active {
     border: none;
 }
+/* End style of header1 */
 
-/* the end style of header1 */
-
-/* beging style of header2 */
-
+/* Begin style of header2 */
 .ContainerHeader2 {
     width: 100%;
     padding-top: 15px;
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: space-around;
     background-color: var(--color-bg-header);
-
 }
-
-.logo {
+ 
+.ContainerHeader2 .logo {
     height: 3em;
-    margin-left: -50px;
+    margin-right: 39em;
 }
 
-/* input search */
+/* Input search */
 form {
     position: relative;
     width: 20rem;
     background: var(--color-brand);
     border-radius: 0.7rem;
-
-
-    input,
-    button {
-        height: 2.5rem;
-        font-family: var(--font-fam);
-        border: none !important;
-        color: var(--color-dark);
-        font-size: 1rem;
-    }
-
-    input[type="search"] {
-        outline: 0;
-        width: 100%;
-        background: var(--color-light1);
-        padding: 0 1rem;
-        border-radius: 0.7rem;
-        appearance: none;
-        transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
-        z-index: 1;
-        position: relative;
-    }
-
-    button {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 4rem;
-        font-weight: bold;
-        background: var(--color-brand);
-        border-radius: 0 0.7rem 0.7rem 0;
-        color: #fff;
-    }
-
-    input:not(:placeholder-shown) {
-        border-radius: 0.7rem 0 0 0.7rem;
-        width: calc(100% - 4rem);
-        +button {
-            display: block;
-        }
-    }
-
-    label {
-        position: absolute;
-        clip: rect(1px, 1px, 1px, 1px);
-        padding: 0;
-        border: 0;
-        height: 1px;
-        width: 1px;
-        overflow: hidden;
-    }
-
 }
 
+input, button {
+    height: 2.5rem;
+    font-family: var(--font-fam);
+    border: none !important;
+    color: var(--color-dark);
+    font-size: 1rem;
+}
 
-/**/
+input[type="search"] {
+    outline: 0;
+    width: 100%;
+    background: var(--color-light1);
+    padding: 0 1rem;
+    border-radius: 0.7rem;
+    appearance: none;
+    transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
+    z-index: 1;
+    position: relative;
+}
+
+button {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    font-weight: bold;
+    background: var(--color-brand);
+    border-radius: 0 0.7rem 0.7rem 0;
+    color: #fff;
+}
+
+input:not(:placeholder-shown) {
+    border-radius: 0.7rem 0 0 0.7rem;
+    width: calc(100% - 4rem);
+    +button {
+        display: block;
+    }
+}
+
+label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
 .iconsHeader2 {
     position: relative;
     top: 12px;
@@ -130,121 +122,140 @@ form {
     cursor: pointer;
     color: var(--color-icons-header2);
     background-color: var(--color-bg-header);
+    left: 15em;
 }
 
-.badge {
+.IconUser{
+    font-size:40px;
+    position: relative;
+    right: 0.5em;
+    bottom: 10px;
+}
+
+.badge{
+    
+}
+
+.badge #panier{
+    position:relative;
+    bottom: 55px;
+    left:0.8em;
+    font-size:35px;
+    color: rgb(7, 7, 126);
+}
+
+.badge p {
+    font-size: 14px;
+    color: #fff;
     background-color: red !important;
     border-radius: 50px;
-    font-size: 20px;
-    width: 1.1em;
-    height: 22px;
+    width: 2em;
+    height: 24px;
     position: relative;
-    top: -55px;
-    left: 2.5em;
-
-    p {
-        position: relative;
-        left: 6.5px;
-        top: 0px;
-        font-size: 14px;
-        font-weight: bold;
-    }
+    bottom: 8.5em;
+    left: 2.2em;
+    text-align: center;
+    padding-top: 2px;
 }
-
-/* end style Header2 */
-
-
-/* begin style header3 */
-
+/* End style of header2 */
 
 .dropDownCat {
     display: inline-block;
+    margin-right: 2em;
+}
 
-    .BtnCategorie {
-        display: flex;
-        background: var(--color-light);
-        height: 45px;
-        color: rgb(55, 63, 80);
-        border: none;
-        cursor: pointer;
-        position: relative;
-        left: -11em;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+.dropDownCat .BtnCategorie {
+    display: flex;
+    background: var(--color-light);
+    height: auto !important;
+    color: rgb(7, 7, 126);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    right: 15em;
+    width:auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-        .IconCatg {
-            margin: 8px;
-            font-size: 27px;
-        }
+.dropDownCat .BtnCategorie .IconCatg {
+    margin: 8px;
+    font-size: 27px;
+}
 
-        p {
-            font-weight: 400;
-            margin: 10px;
-            font-size: 14px;
-            margin-right: 80px;
-            font-size:18px;
-        }
+.dropDownCat .BtnCategorie p {
+    font-weight: 400;
+    margin: 10px;
+    font-size: 18px;
+    margin-right: 80px;
+}
 
-        .Iconright {
-            margin: 10px;
-            font-size: 18px;
-        }
+.dropDownCat .BtnCategorie .Iconright {
+    margin: 15px;
+    font-size: 18px;
+}
 
-    }
+.dropDownCat:hover .BtnCategorie,
+.dropDownCat:active .BtnCategorie {
+    background: linear-gradient(to right, rgba(126, 126, 128, 0.272), rgba(21, 15, 69, 0.272));
+    transition: 1s ease-in;
+    color: rgb(97, 97, 187);
+}
 
-    &:hover .BtnCategorie {
-        background: linear-gradient(to right, rgba(126, 126, 128, 0.272), rgba(21, 15, 69, 0.272));
-        transition: 1s ease-in;
-        color:white;
-
-    }
-
-    &:active .BtnCategorie {
-        background: linear-gradient(to right, rgba(126, 126, 128, 0.272), rgba(21, 15, 69, 0.272));
-        transition: 1s ease-in;
-        color:white;
-    }
-
-
-    .dropdown-content {
-        display: none;
-        position: relative;
-        background-color: rgb(243, 245, 249);
-        width: 15em;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 10;
-        left: 9.5em;
-        padding-bottom: 1em;
-        top:-10px;      
-
-        a {
-            margin-top: 15px;
-            text-decoration: none;
-            display: block;
-            margin-left: 10px;
-            margin-bottom: 5px;
-            color: rgb(55, 63, 80);
-
-        }
-
-        #iconListe {
-            margin-left: 1em;
-            margin-right: 1em;
-            font-size: 25px;
-        }
-
-    }
-
-    &:hover .dropdown-content {
-        display: block;
-    }
-
-    &:active .dropdown-content {
-        display: block;
-    }
-
+.dropDownCat .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: rgb(243, 245, 249);
+    width: 15em;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    left: 1em;
+    padding-bottom: 1em;
+    padding-top: 0.3em;
+    top:0.5em;
+    z-index: 10;
 
 }
 
+.dropDownCat .dropdown-content a{
+    margin-top: 15px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(55, 63, 80);
+    cursor: pointer;  
+}
+
+.dropdown-content1 {
+    display: block; /* Affiché uniquement lorsque isDropdownOpen est true */
+    background-color: rgb(243, 245, 249);
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 0.3em 0;
+  }
+
+
+.dropDownCat a {
+    margin-top: 15px;
+    text-decoration: none;
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: rgb(55, 63, 80);
+}
+
+
+#iconListe {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 25px;
+}
+
+.dropDownCat:hover .dropdown-content,
+.dropDownCat:active .dropdown-content {
+    display: block;
+}
 
 .ListHeader3 {
     margin-top: 20px;
@@ -254,122 +265,140 @@ form {
     cursor: pointer;
     font-weight: bold;
     color: var(--color-Menu);
-
-    ul,
-    li {
-        list-style: none;
-    }
 }
+
+.ListHeader3 ul,
+.ListHeader3 li {
+    list-style: none;
+}
+
+/*
+.dropDownMenu .dropdown-contentMenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(243, 245, 249);
+    width: 90%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    left: 2em;
+    top: 8em;
+    height: 10em;
+}
+
+.dropDownMenu:hover .dropdown-contentMenu,
+.dropDownMenu:active .dropdown-contentMenu {
+    display: block;
+}
+
 
 .dropDownMenu {
     display: inline-block;
-    
-    .BTNMenu {
-        font-size: 35px;
-        color: rgb(55, 63, 80);
-        margin-top: 10px;
-        display: none;
-    }
-    .dropdown-contentMenu {
-        display: none;
-        position: absolute;
-        background-color: rgb(243, 245, 249);
-        width: 90%;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 10;
-        left: 2em;
-        top: 8em;
-        height:10em ;
+}
 
-        a {
-            margin-top: 15px;
-            text-decoration: none;
-            display: block;
-            margin-left: 10px;
-            margin-bottom: 5px;
-            color: rgb(55, 63, 80);
+.BTNMenu {
+    font-size: 35px;
+    color: rgb(55, 63, 80);
+    margin-top: 10px;
+    display: none;
+}
 
-        }
-    }
-    &:hover .dropdown-contentMenu {
-        display: block;
-    }
+.dropDownMenu a {
+    margin-top: 15px;
+    text-decoration: none;
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: rgb(55, 63, 80);
+}
+*/
 
-    &:active .dropdown-contentMenu {
-        display: block;
-    }
-
+.BTNUser{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 9px;
+}
+.BTNUser #BtnConnect{
+    border: 1px solid rgba(236, 164, 8, 0.412);
+    margin-right: 20px;
+    padding:9px;
+    color:rgba(231, 160, 8, 0.999);
+    cursor: pointer;
+}
+.BTNUser #BtnInscrit{
+    padding:9px;
+    background-color: rgba(224, 157, 11, 0.412);
+    color:#a06609;
+    border: none;
+    cursor: pointer;
 
 }
 
+@media (max-width: 1800px) {
+    .iconsHeader2 {
+        left: 10em;
+     }
+}
 
-@media (min-width: 768px) {
-    .dropDownCat {
-        margin-left: 1em;
+@media (max-width: 1600px) {
 
-        .BtnCategorie {
-            margin-left: 10em;
-        }
+    .dropDownCat .BtnCategorie {
+        right: 8em;
 
-        .dropdown-content {
-            margin-left: -10.5em;
-        }
     }
-    .dropDownMenu {
-        .BTNMenu {
-            display: none;
-        }
+    .dropDownCat .dropdown-content {
+        right: 9.1em;
     }
+
+    .BTNUser{
+        right: 4em;
+        position: relative;
+     }
+
+     .iconsHeader2 {
+        left: 1em;
+     }
+}
+
+@media (max-width: 968px) {
+    .dropDownCat .BtnCategorie {
+        right: 6em;
+    }
+    .iconsHeader2 {
+        left: -3em;
+
+     }
+    .BTNUser{
+        right: 15em;
+        position: relative;
+     }
 }
 
 
-@media (max-width: 768px) {
-    .dropDownCat {
-        margin-left: 0.5em;
 
-        .BtnCategorie {
-            margin-left: 12em;
-        }
-
-        .dropdown-content {
-            margin-left: -9.1em;
-        }
-    }
-
-    form {
-        width: 10rem;
-    }
-
-    .logo {
-        margin-left: -20px;
-    }
-
-    .dropDownMenu {
-        .BTNMenu {
-            display: flex;
-            margin-left: -2em;
-        }
+@media (max-width: 770px) {
+    .dropDownCat .BtnCategorie {
+        right: 2em;
         
     }
-
-    .ListHeader3 {
-        display: none;
+    
+    .iconsHeader2 {
+        left: -10em;
+     }
+    .IconUser{
+        right: 0.5em;
     }
 
-    
+    .BTNUser{
+        right: 21em;
+        position: relative;
+     }
 }
 
-@media (max-width: 500px) {
-    .dropDownMenu {
-        .BTNMenu {
-            display: flex;
-        }
-        
-    }
 
-    .dropDownCat {
-        width:5em;
-        margin-right: 20em;
-    }
-    
+@media (max-width: 650px) {
+  
+    .BTNUser{
+        position: relative;
+        right: 27em;
+     }
 }

@@ -15,7 +15,7 @@ export default function Header1({ MoodLight, setMoodLight }) {
 
   return (
     <div className="HeaderContainer1">
-      <div className="titreHeader">E-commerce</div>
+      <div className="titreHeader">ONLINE_SHOP</div>
       <div className="icons">
         {MoodLight === "light" ? <BsMoonStarsFill className='icone' onClick={() => changeMood('dark')} /> : <MdLightMode color='yellow' className='icone' onClick={() => changeMood('light')} />}
 

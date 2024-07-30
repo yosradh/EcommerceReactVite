@@ -36,6 +36,12 @@
   --color-bg-button-category:rgba(212, 214, 237, 0.798);
   --color-category-text:white;
 
+  --color-modal:#000;
+  --color-modal-text:#fff;
+  
+  --color-text-pagination: white;
+  --color-selected-pagination: black;
+  --color-hover-pagination: rgba(255, 255, 255, 0.2);
 
 }
 
@@ -62,7 +68,14 @@
   --color-bg-button-category:rgba(212, 214, 237, 0.798);
   --color-category-text:blue;
 
+ 
+  --color-modal:#fff;
+  --color-modal-text:#000;
+
   
+  --color-text-pagination: black;
+  --color-selected-pagination: white;
+  --color-hover-pagination: rgba(255, 255, 255, 0.2); 
 }
 
 

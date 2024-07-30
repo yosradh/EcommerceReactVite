@@ -3,7 +3,7 @@
     justify-content: space-between;
     padding-left: 14em;
     padding-right: 4em;
-    padding-top: 4em;
+    padding-top: 2em;
     gap:10px;
     width:100%;
     background:var(--color-background-color);    
@@ -28,10 +28,13 @@
         cursor: pointer;
         position: relative;
         padding: 15px;
-        background-color: gray;
+        background-color: rgba(233, 158, 27, 0.297);
         border: none;
         color: white;
         font-size: 18px;
+        width: auto;
+        text-align: center;
+        font-weight:650;
 
     }
     .swiper {
@@ -65,7 +68,7 @@
 
     .TexteBanner1 {
         position: relative;
-        left: 10%;
+        left: 1em;
         top: -12em;
         font-weight: 300;
         font-size: 18px;
@@ -74,7 +77,6 @@
 
     .BtnShop {
         cursor: pointer;
-        position: relative;
         color: blue;
     }
 

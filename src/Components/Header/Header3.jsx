@@ -1,34 +1,64 @@
 import React from 'react'
 import { CgWindows } from "react-icons/cg";
 import { FaAngleRight } from "react-icons/fa";
-import { MdOutlineBikeScooter } from "react-icons/md";
-import { MdOutlineImportantDevices } from "react-icons/md";
-import { PiBooksDuotone } from "react-icons/pi";
-import { GrGamepad } from "react-icons/gr";
-import { PiListFill } from "react-icons/pi";
+import { GiClothes } from "react-icons/gi";
+import { LiaGlassesSolid } from "react-icons/lia";
+import { GiConverseShoe } from "react-icons/gi";
+import { BsBackpack2 } from "react-icons/bs";
 
 
 export default function Header3() {
+    {/* 
+    const [selectedItem,setSelectedItem] = useState("")
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const dropdownRef = useRef(null);
 
+    useEffect(() => {
+      // Gestion du clic en dehors du dropdown
+      function handleClickOutside(event) {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+          setIsDropdownOpen(false);
+        }
+      }
+      
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
+    }, []);
+
+    const toggleDropdown = () => {
+      setIsDropdownOpen(prevState => !prevState);
+    };
+
+    const handleClickInside = (event) => {
+      event.stopPropagation();
+    };
+*/}
   return (
       <div className="ContainerHeader2">
 
-        <div className="dropDownCat">
-          <button className="BtnCategorie">
-            <CgWindows className="IconCatg"/>
-            <p>Categories</p>
-            <FaAngleRight className="Iconright" />
-          </button>
+      <div className="dropDownCat" > {/*onClick={handleClickInside} */}
+            <button className="BtnCategorie">
+              <CgWindows className="IconCatg"/>
+              <p>Categories</p>
+              <FaAngleRight className="Iconright" />
+            </button>
 
-          <div className="dropdown-content">
-            <a href="#"><MdOutlineBikeScooter id="iconListe" /> Bikes</a>
-            <a href="#"><MdOutlineImportantDevices id="iconListe"/>Electronics</a>
-            <a href="#"><PiBooksDuotone id="iconListe"/> Books</a>
-            <a href="#"><GrGamepad id="iconListe"/> Games</a>
+            <div className="dropdown-content" >{/* ref={dropdownRef}*/}
+             {/**  <a href="femme" onClick={toggleDropdown}><GiClothes id="iconListe" /> Femme</a>
+              <a href="homme" onClick={toggleDropdown}><LiaGlassesSolid id="iconListe"/> Homme</a>
+              
+              {isDropdownOpen && (
+                <div className="dropdown-content1">*/}
+                  <a href="vetement"><GiClothes id="iconListe" /> Vêtements</a>
+                  <a href="lunette"><LiaGlassesSolid id="iconListe"/> Lunettes</a>
+                  <a href="bascket"><GiConverseShoe id="iconListe"/> Basckets</a>
+                  <a href="sac"><BsBackpack2 id="iconListe"/> Sacs</a>              
+            </div>
           </div>
-        </div>
         
-        {/* si la fenetre est petit  */}
+        {/* si la fenetre est petit 
         <div className="dropDownMenu">
           <PiListFill className="BTNMenu" />
           <div className="dropdown-contentMenu">
@@ -37,13 +67,14 @@ export default function Header3() {
               <a href="#">Pages</a>
           </div>
         
-        </div>
+        </div> 
         <ul className="ListHeader3">
           <li>Home</li>
           <li>Mega menu</li>
           <li>Pages</li>
         </ul>
-
+*/}
+      <div></div>
       </div>
   )
 }

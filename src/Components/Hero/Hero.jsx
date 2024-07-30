@@ -10,8 +10,8 @@ import { Pagination } from 'swiper/modules';
 export default function Hero() {
 
     const Collection = [
-        { text: "WOMEN", image: "./Banner/banner-25.jpg" },
-        { text: "MEN", image: "./Banner/banner-15.jpg" },
+        { text: "WOMEN", image: "./Banner/ImageAcceuil.png" },
+        { text: "MEN", image: "./Banner/ImageAcceuilHomme.png" },
     ]
     return (
         <>
@@ -26,7 +26,7 @@ export default function Hero() {
                                     <p className="StyleBold">{item.text} </p>
                                     <p>SALE UP TO <span style={{ color: 'red' }}>30% OFF</span> </p><br />
                                     <p style={{ fontWeight: '40', fontSize: '14px' }}>Get Free Shipping on orders over 100dt</p><br />
-                                    <button className="ButtonShop">Shop Now <br /></button>
+                                    <p className="ButtonShop">Shop Now <br /></p>
                                 </div>
                             </SwiperSlide>
                         ))}
@@ -35,7 +35,7 @@ export default function Hero() {
 
                 <div className="RightSection">
                     <div >
-                        <img src="./Banner/banner-16.jpg" alt="" />
+                        <img src="./Banner/banner-16.png" alt="banner-16.png" width='330px' height='236px'/>
                         <div className="TexteBanner1">
                             <p>NEW PRRIVALS </p>
                             <p className="StyleBold"> SUMMER SALE 20% OFF </p><br />
@@ -44,7 +44,7 @@ export default function Hero() {
                     </div>
 
                     <div className="Banner">
-                        <img src="./Banner/banner-17.jpg" alt="" />
+                        <img src="./Banner/banner-17.png" alt="banner-17.png" width='330px' height='236px'/>
                         <div className="TexteBanner1">
                             <p>NEW PRRIVALS <br /></p>
                             <p className="StyleBold"> SUMMER SALE 20% OFF </p><br />

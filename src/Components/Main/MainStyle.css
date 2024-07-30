@@ -1,15 +1,18 @@
-.MainStyle{
+/* Styles globaux */
+.MainStyle {
     background: var(--color-background-color);    
 }
+
+/* Conteneur du menu */
 .containerMenu {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    display: flex;
     padding: 1em;
     background: var(--color-background-color);    
     position: relative;
     right: 0.7em;
-    top: 1em;
+    top: 3em;
     width: 100%;
 }
 
@@ -24,15 +27,18 @@
     position: relative;
     right: 20em;
 }
-
-.containerMenu .right button {
+.right span {
+    width:auto !important;
     font-size: 17px;
     padding: 10px;
     margin: 5px;
     background-color: white;
     border-radius: 7px;
     border-color: var(--color-light);
+    border: 1px solid var(--color-light);
+    cursor: pointer;
 }
+
 
 .containerMenu .right .selected {
     background-color: rgba(133, 129, 193, 0.388);
@@ -41,101 +47,207 @@
     font-size: 18px;
 }
 
-.containerMenu .right button:not(.selected):hover {
+.containerMenu .right span:not(.selected):hover {
     background-color: var(--color-bg-button-category);
-    font-size: 18px;
 }
 
+/* Liste des cartes */
 .ListCard {
     display: flex;
     flex-wrap: wrap;
     gap: 15px; 
     position: relative;
-    top:30px;
-    padding-left:13.7em;
-
+    top: 5em;
+    padding-left: 13.7em;
 }
 
-.card {
-    max-width: 355px;
+.ListCard .card {
+    width: 355px;
     height: 34em;
     margin: 10px; 
+    background-color: var(--color-modal);
+    color:var(--color-modal-text);
 }
 
-.headerCard {
+.ListCard .card p{
+    color:var(--color-modal-description-pannier);
+}
+
+.ListCard .headerCard {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
 
-#Panier {
-    font-size: 28px;
-    margin-right: 10px;
-}
-
-.CardActions {
+.CardAction {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: inherit;
+    bottom: 0;
+    margin-left: -2.5em;
 }
 
-.cardMedia{
+.CardAction #Panier {
+    width:auto;
+    gap:5px;
+}
+
+
+.ListCard .cardMedia {
     height: 330px;
+    object-fit: unset;
 }
 
-.cardMedia:hover{
+.ListCard .cardMedia:hover {
     transform: scale(1.15);
     margin-bottom: 20px;
-    transition: 1s ;
+    transition: 1s;
 }
-/* Style pour le modal backdrop */
+
+/* Styles pour le modal en arriere plan */
 #ModalPanier .MuiBackdrop-root {
-    background-color: rgba(0, 0, 0, 0.159);
-  }
-  
-  /* Style pour le contenu du modal */
+    background-color: rgba(0, 0, 0, 0.588);
+}
+
 #ModalStyle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50em;
-    height:auto;
-    background-color: white;
-    border: 1px solid #000;
+    width: auto !important;
+    height: auto;
+    border: 1px solid white;
     border-radius: 10px;
     box-shadow: 50px;
-    padding: 2em;
-  }
+    background-color: white;
+}
 
-  #headModal{
+#FermetureModal {
     float: right;
     font-size: 25px;
-  }
-  #contenuModal{
-    margin-top:2em;
-    justify-content: space-evenly;
-    display:flex;
-  }
-  #partieRigth{
-    text-align: left;
-    border: 1px solid #000;
-  }
-  #partieLeft{
-    width:1em;
+    color: #ba5d62;
+    margin-top: 1em;
+    margin-right: 1em;
+    transition: transform 0.6s ease; /* Ajoute une transition pour un effet lisse */
+    cursor: pointer;
+}
 
+#FermetureModal:hover {
+    transform: rotate(360deg);
+    transform-origin: center;
+}
+
+#contenuModal {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+#partieLeft {
+    width: 350px;
+    height: 450px;
+    border: inherit;
+    object-fit: cover; /* Pour ajuster l'image à la taille du conteneur sans déformation */
+}
+
+#partieRigth {
+    text-align: left;
+    position: inherit;
+    margin-left: 1em;
+    margin-top: 3em;
+    object-fit: cover;
+}
+
+#partieRigth h1 {
+    color:  #242c36;
+    font-family: Verdana;
+}
+
+#partieRigth h2 {
+    color: #ba5d62;
+    margin-top: 8px;
+}
+
+#partieRigth p {
+    color: #757676;
+    margin-top: 12px;
+}
+
+#partieRigth #listeImg {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#partieRigth #listeImg #CatalogueImg {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #cccccc9b;
+    border-radius: 5px;
+}
+
+#partieRigth .btnBuy {
+    background-color: #1976d2;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    padding-bottom: 7px;
+    border: inherit;
+    font-weight: 520;
+    position: relative;
+    top: 2em;
+    width: auto;
+    gap:10px;
+}
+
+#partieRigth .btnBuy #icon {
+    font-size: 25px;
+}
+
+
+.paragCard{
+    color:#e1555c;
+    font-size:17px;
+}
+
+.DescriptionCard{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;/*nombre de ligne afficher */
+    -webkit-box-orient: vertical ;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+    height: 3em; /* Ajustez la hauteur en fonction de la taille de la ligne */
+    line-height: 1.5em;  
+}
+
+#pagination{
+    background: var(--color-background-color);    
+    margin-top: 8em;
+    display: flex;
+    justify-content: center;
+}
+
+ 
+/* Shopping.css */
+
+.Toastify__toast--success {
+    background: #4caf50; /* Couleur de fond */
+    color: white; /* Couleur du texte */
   }
   
+  .Toastify__toast--error {
+    background: #f44336; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+  }
 
-
-
+/* Media queries */
 @media (max-width: 1700px) {
     .containerMenu .right {
         right: 7em;
     }
     .containerMenu .left {
         left: 15em;
-    }  
+    }
 }
 
 @media (max-width: 1200px) {
@@ -146,18 +258,44 @@
     .containerMenu .left {
         text-align: center;
         margin-bottom: 2em;
-        position:relative;
-        left:0;    
+        position: relative;
+        left: 0;
     }
-
     .containerMenu .right {
         text-align: center;
         left: 2em;
     }
- 
+   
     .ListCard {
-        position:relative;
-        margin-left: -4em;
+        left: -3em;
+    }
+
+   /*moyenne taille*/     
+    #ModalStyle {
+        width: 45em;
+    }        
+    #partieLeft {
+        width: 300px;
+    }
+    #partieRigth #listeImg #CatalogueImg {
+        width: 150px;
+        height: 120px;
     }
 }
 
+@media (max-width:950px){
+    /*petite taille*/     
+    #ModalStyle {
+     width: 33em;
+     }        
+     #partieLeft {
+         width: 200px;
+     }
+     #partieRigth #listeImg #CatalogueImg {
+         width: 100px;
+         height: 100px;
+     }
+     .ListCard {
+        left: -4em;
+    }
+ }
